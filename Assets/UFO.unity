@@ -180,7 +180,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.1}
+  m_Size: {x: 0.16, y: 0.15}
   m_EdgeRadius: 0
 --- !u!1 &333062872
 GameObject:
@@ -332,7 +332,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 448266896}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: fd748ef0ac974644a8c43373997c2da8, type: 3}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &448266896
@@ -428,7 +439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &844132481
 Prefab:
@@ -439,11 +450,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.49
+      value: -0.48999023
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.49
+      value: -3.4900055
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -451,15 +462,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalRotation.w
@@ -467,7 +478,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalScale.y
@@ -743,7 +754,7 @@ RectTransform:
   m_Children:
   - {fileID: 448266894}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -787,7 +798,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4378650587426070, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4378650587426070, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_LocalScale.x
@@ -811,6 +822,7 @@ GameObject:
   - component: {fileID: 1588731399}
   - component: {fileID: 1588731398}
   - component: {fileID: 1588731397}
+  - component: {fileID: 1588731400}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -911,6 +923,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1588731395}
+--- !u!114 &1588731400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588731395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd748ef0ac974644a8c43373997c2da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1974325744 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1496909334511962, guid: c33e3527beac18b45ae00ba73049dba5,
@@ -939,5 +962,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13, y: 0.09}
+  m_Size: {x: 0.13, y: 0.13}
   m_EdgeRadius: 0

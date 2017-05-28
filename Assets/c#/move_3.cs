@@ -16,27 +16,28 @@ public class move_3 : MonoBehaviour
     public bool inputRight = false;
     public bool inputJump = false;
 
-    Rigidbody2D rigid;
-    Animator animator;
-    SpriteRenderer spriteRenderer;
+   public Rigidbody2D rigid;
+   public Animator animator;
+   public SpriteRenderer spriteRenderer;
    public bool doubleJump;
     public int JumpConut;
     public bool isJumping;
+    public int health;
 
-    public void LeftClick ()
+    public void Start()
     {
+        rigid = gameObject.GetComponent<Rigidbody2D> ();
+        animator = gameObject.GetComponentInChildren<Animator> ();
+        spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer> ();
 
+        health = maxHealth;
+
+        UIButtonManger ui = GameObject.FindGameObjectWithTag("Manager").GetComponent<UIButtonManger>();
+        ui.Init();
     }
-    public void RightClick ()
-    {
 
-    }
-    public void JumpClick ()
-    {
 
-    }
 
-   
     public void Update()
     {
         if ((!inputRight && !inputLeft))
