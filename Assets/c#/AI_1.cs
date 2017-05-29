@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AI_1 : MonoBehaviour {
+       
     public float movePower = 1f;
 
-    Animator animator;
+  
     Vector3 movement;
     int movementFlag = 0;
     public int creatrueType;
@@ -15,7 +16,7 @@ public class AI_1 : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        animator = gameObject.GetComponentInChildren<Animator>();
+
 
         StartCoroutine("ChangeMovement");
 	}
@@ -23,10 +24,7 @@ public class AI_1 : MonoBehaviour {
     {
         movementFlag = Random.Range(0, 3);
         Debug.Log("송신중");
-        if (movementFlag == 0)
-            animator.SetBool("isMoving", false);
-        else
-            animator.SetBool("isMoving", true);
+        
         yield return new WaitForSeconds(2f);
         Debug.Log("송신완료");
         StartCoroutine("ChangeMovement");
@@ -91,7 +89,7 @@ public class AI_1 : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             isTracing = true;
-            animator.SetBool("isMoving", true);
+           
         }
  
         
