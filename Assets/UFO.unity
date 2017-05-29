@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 1193678988}
   - component: {fileID: 1193678992}
   - component: {fileID: 1193678993}
+  - component: {fileID: 1193678994}
   m_Layer: 0
   m_Name: testAI
   m_TagString: Untagged
@@ -450,8 +451,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1193678987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.4, y: -18.3, z: 0}
-  m_LocalScale: {x: 121.51275, y: 109.3378, z: 1}
+  m_LocalPosition: {x: 30.1, y: -18.9, z: 0}
+  m_LocalScale: {x: 109.74106, y: 97.56617, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -468,7 +469,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePower: 5
+  movement: {x: 0, y: 0, z: 0}
+  movementFlag: 0
   creatrueType: 1
+  isTracing: 0
+  traceTarget: {fileID: 0}
 --- !u!58 &1193678993
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -483,7 +488,20 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.34
+  m_Radius: 0.4
+--- !u!114 &1193678994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193678987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b006cbdf1430b41a7bc16556b38590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movePower: 5
+  creatrueType: 1
 --- !u!1001 &1497574836
 Prefab:
   m_ObjectHideFlags: 0
