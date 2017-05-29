@@ -8,10 +8,13 @@ public class AI_1 : MonoBehaviour {
     Animator animator;
     Vector3 movement;
     int movementFlag = 0;
+    public int creatrueType;
+    private bool isTracing;
+    private GameObject traceTarget;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         animator = gameObject.GetComponentInChildren<Animator>();
 
         StartCoroutine("ChangeMovement");
@@ -35,14 +38,39 @@ public class AI_1 : MonoBehaviour {
     }
     public void Move ()
     {
+       
         Vector3 moveVelocity = Vector3.zero;
+        string dist = "";
+      
+        if (isTracing)
+        {
+            
 
-        if(movementFlag == 1)
+            Vector3 playerPos = traceTarget.transform.position;
+
+            if (playerPos.x < transform.position.x)
+                dist = "Left";
+            else if (playerPos.x > transform.position.x)
+                dist = "Right";
+
+        }
+        else
+        {
+            if (movementFlag == 1)
+                dist = "Left";
+            else if (movementFlag == 2)
+                dist = "Right";
+
+
+
+        }
+
+        if (dist == "Left")
         {
             moveVelocity = Vector3.left;
             transform.localScale = new Vector3(1, 1, 1);
         }
-        else if (movementFlag == 2)
+        else if (dist == "Right")
         {
             moveVelocity = Vector3.right;
             transform.localScale = new Vector3(-1, 1, 1);
@@ -55,4 +83,47 @@ public class AI_1 : MonoBehaviour {
     void Update () {
 		
 	}
+    public void OnTriggerStay2D(Collider2D other)
+    {
+        if (creatrueType == 0)
+            return;
+
+        if (other.gameObject.tag == "Player")
+        {
+            isTracing = true;
+            animator.SetBool("isMoving", true);
+        }
+ 
+        
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (creatrueType == 0)
+            return;
+
+        if (other.gameObject.tag == "Player")
+        {
+            isTracing = false;
+
+            StartCoroutine("ChangeMovement");
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (creatrueType == 0)
+            return;
+
+        if (other.gameObject.tag == "Player")
+        {
+            traceTarget = other.gameObject;
+
+            StopCoroutine("ChangeMovement");
+
+
+
+        }
+    }
+   
+
+     
 }

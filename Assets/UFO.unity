@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 494cea0ddc2c4194a98cd76b498b2870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  Speed: 15
 --- !u!114 &96167225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba1809a362c9f7459d4f238cc685d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
+  Speed: 10
 --- !u!50 &96167226
 Rigidbody2D:
   serializedVersion: 4
@@ -191,11 +191,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.48999023
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.4900055
+      value: -37.7
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -223,11 +223,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalScale.y
-      value: 21.582191
+      value: 122.73816
       objectReference: {fileID: 0}
     - target: {fileID: 4153402729708974, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_LocalScale.x
-      value: -183.87639
+      value: -1485.0967
       objectReference: {fileID: 0}
     - target: {fileID: 1496909334511962, guid: c33e3527beac18b45ae00ba73049dba5, type: 2}
       propertyPath: m_TagString
@@ -309,7 +309,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 43.54402
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 1193678989}
   - component: {fileID: 1193678988}
   - component: {fileID: 1193678992}
+  - component: {fileID: 1193678993}
   m_Layer: 0
   m_Name: testAI
   m_TagString: Untagged
@@ -449,8 +450,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1193678987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -1.08, z: 0}
-  m_LocalScale: {x: 11.756457, y: 8.946225, z: 1}
+  m_LocalPosition: {x: 58.4, y: -18.3, z: 0}
+  m_LocalScale: {x: 121.51275, y: 109.3378, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -466,7 +467,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3008d9185812a459dae3ff7f8a0d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movePower: 1
+  movePower: 5
+  creatrueType: 1
+--- !u!58 &1193678993
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193678987}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.34
 --- !u!1001 &1497574836
 Prefab:
   m_ObjectHideFlags: 0
@@ -476,11 +493,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4378650587426070, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.59
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 4378650587426070, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.34
+      value: -24.9
       objectReference: {fileID: 0}
     - target: {fileID: 4378650587426070, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -508,11 +525,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4378650587426070, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_LocalScale.x
-      value: 12.733647
+      value: 116.546455
       objectReference: {fileID: 0}
     - target: {fileID: 4378650587426070, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.188011
+      value: 75.36377
       objectReference: {fileID: 0}
     - target: {fileID: 1871584239109026, guid: 1fe1fd4908100ea41bf734b8d8db18fb, type: 2}
       propertyPath: m_TagString
