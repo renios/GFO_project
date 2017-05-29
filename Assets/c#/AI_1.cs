@@ -5,28 +5,28 @@ using UnityEngine;
 public class AI_1 : MonoBehaviour {
     public float movePower = 1f;
 
-    Animator animator;
+    // Animator animator;
     Vector3 movement;
     int movementFlag = 0;
     public int creatrueType;
     private bool isTracing;
     private GameObject traceTarget;
+    Vector3 originalScale;
 
 
     // Use this for initialization
     void Start () {
-        animator = gameObject.GetComponentInChildren<Animator>();
-
+        originalScale = transform.localScale;
         StartCoroutine("ChangeMovement");
 	}
     IEnumerator ChangeMovement()
     {
         movementFlag = Random.Range(0, 3);
         Debug.Log("송신중");
-        if (movementFlag == 0)
-            animator.SetBool("isMoving", false);
-        else
-            animator.SetBool("isMoving", true);
+        // if (movementFlag == 0)
+        //     animator.SetBool("isMoving", false);
+        // else
+        //     animator.SetBool("isMoving", true);
         yield return new WaitForSeconds(2f);
         Debug.Log("송신완료");
         StartCoroutine("ChangeMovement");
@@ -44,15 +44,12 @@ public class AI_1 : MonoBehaviour {
       
         if (isTracing)
         {
-            
-
             Vector3 playerPos = traceTarget.transform.position;
 
             if (playerPos.x < transform.position.x)
                 dist = "Left";
             else if (playerPos.x > transform.position.x)
                 dist = "Right";
-
         }
         else
         {
@@ -60,20 +57,17 @@ public class AI_1 : MonoBehaviour {
                 dist = "Left";
             else if (movementFlag == 2)
                 dist = "Right";
-
-
-
         }
 
         if (dist == "Left")
         {
             moveVelocity = Vector3.left;
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = originalScale * 1.0f;
         }
         else if (dist == "Right")
         {
             moveVelocity = Vector3.right;
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = originalScale * 0.5f;
 
         }
         transform.position += moveVelocity * movePower * Time.deltaTime;
@@ -91,7 +85,6 @@ public class AI_1 : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             isTracing = true;
-            animator.SetBool("isMoving", true);
         }
  
         
