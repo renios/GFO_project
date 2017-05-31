@@ -26,7 +26,7 @@ public class AI_1 : MonoBehaviour {
         // if (movementFlag == 0)
         //     animator.SetBool("isMoving", false);
         // else
-        //     animator.SetBool("isMoving", true);
+        //     animator.SetBool("isMoving", true);    
         yield return new WaitForSeconds(2f);
         Debug.Log("송신완료");
         StartCoroutine("ChangeMovement");
