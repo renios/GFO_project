@@ -38,6 +38,35 @@ public class storytest : MonoBehaviour {
 		{
 			textObject.text = "돌아가신 너희 아빠가 남긴 검이다. 상처가 생긴다면 이 물약을 먹거라.";
 		}
+		else if (num ==6)
+		{
+			textObject.text = "주인공 능력치: 검 공격력 4 체력 20 ";
+		}
+		else if (num == 7)
+		{
+			textObject.text = "형!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"; 
+		}
+		else if (num == 8)
+		{
+			textObject.text = "아…..미안…";
+		}
+		else if (num == 9)
+		{
+			textObject.text = "......";
+		}
+		else if (num == 10)
+		{
+			textObject.text = "주인공 능력치: 공격력 5 체력 22";
+		} 
+		else if (num == 11)
+		{
+			textObject.text = "우린 너희를 살리려 했을 뿐이다. ";
+		}
+		else if (num == 12)
+		{
+			textObject.text = "........";
+		}
+
 	}
 
 	public void Printstory() {
