@@ -22,12 +22,17 @@ public class health : MonoBehaviour {
 			Damaged(1);
 			// player_helath--;
 			textobject.text = "채력:" + player_helath;
+
+		}
+		if(Input.GetKeyDown(KeyCode.H)){
+			player_helath++;
+			textobject.text = "채력:" + player_helath;
 		}
 	}
 
 	void Damaged(int damage)
 	{
-		
+		player_helath--;
 
 	}
 }
