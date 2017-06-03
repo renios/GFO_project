@@ -25,7 +25,7 @@ public class health : MonoBehaviour {
 			Heal(1);
 		}
 
-		textobject.text = "채력:" + player_helath;
+		textobject.text = "체력:" + player_helath;
 	}
 
 	public void Heal(int heal)
