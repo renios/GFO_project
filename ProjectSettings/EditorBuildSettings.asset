@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/4.unity
     guid: fedb67180c008994aae0d15f9120c07b
+  - enabled: 1
+    path: Assets/Scene/UFO 1.unity
+    guid: 86c57d19a29138143af980691a51527c
+  - enabled: 1
+    path: Assets/Scene/UFO 2.unity
+    guid: 00000000000000000000000000000000
