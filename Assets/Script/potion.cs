@@ -7,7 +7,7 @@ public void OnTriggerEnter2D(Collider2D other)
 {
 		if(other.gameObject.tag == "Player")
 		{
-			Debug.Log("포션이다");
+			FindObjectOfType<health>().Heal(5);
 			Destroy(gameObject);
 		}
 		

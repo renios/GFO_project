@@ -20,19 +20,21 @@ public class health : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.O)){
 			Damaged(1);
-			// player_helath--;
-			textobject.text = "채력:" + player_helath;
-
 		}
 		if(Input.GetKeyDown(KeyCode.H)){
-			player_helath++;
-			textobject.text = "채력:" + player_helath;
+			Heal(1);
 		}
+
+		textobject.text = "채력:" + player_helath;
 	}
 
-	void Damaged(int damage)
+	public void Heal(int heal)
 	{
-		player_helath--;
+		player_helath += heal;
+	}
 
+	public void Damaged(int damage)
+	{
+		player_helath -= damage;
 	}
 }
