@@ -67,7 +67,7 @@ public class AI_1 : MonoBehaviour {
         else if (dist == "Right")
         {
             moveVelocity = Vector3.right;
-            transform.localScale = originalScale * 0.5f;
+            transform.localScale = originalScale * 0.8f;
 
         }
         transform.position += moveVelocity * movePower * Time.deltaTime;

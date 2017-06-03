@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIButtonManger : MonoBehaviour {
+public class test_Script : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

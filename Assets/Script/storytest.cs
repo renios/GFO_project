@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class storytest : MonoBehaviour {
 
@@ -38,11 +39,13 @@ public class storytest : MonoBehaviour {
 		{
 			textObject.text = "돌아가신 너희 아빠가 남긴 검이다. 상처가 생긴다면 이 물약을 먹거라.";
 		}
+		else
+		{ 
+		SceneManager.LoadScene("2");
+		}
+		 
 	}
 
-	public void Printstory() {
-		textObject.text = "text";
-	}
 	public void Click() {
 		num = num+1;
 	}
