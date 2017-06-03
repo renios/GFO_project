@@ -16,10 +16,10 @@ public class PotalManager : MonoBehaviour {
         if (other.gameObject.layer == 9 && rigid.velocity.y < 0)
         {
 
-            BlockStatus block = other.gameObject.GetComponent<BlockStatus>
-                Debug.Log(block.type) {
+            //BlockStatus block = other.gameObject.GetComponent<BlockStatus>
+                //Debug.Log(block.type) {
 
-            }
+            //}
         }
     }
 
