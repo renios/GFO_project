@@ -11,7 +11,7 @@ public class health : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player_helath = 30;
-		textobject.text = "채력:" + player_helath;
+		textobject.text = "체력:" + player_helath;
 
 		
 	}
