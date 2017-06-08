@@ -7,9 +7,11 @@ public class move_1 : MonoBehaviour {
 	bool leftButtonClicked = false;
 	bool rightButtonClicked = false;
 
+	Animator animator;
+
 	// Use this for initialization
 	void Start () {
-		
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -20,6 +22,11 @@ public class move_1 : MonoBehaviour {
 		if(Input.GetKey (KeyCode.A) || leftButtonClicked) {
 			transform.Translate (Vector3.left * Speed * Time.deltaTime);
 		}
+
+		if (leftButtonClicked || rightButtonClicked)
+			animator.SetFloat("speed", 1.0f);
+		else
+			animator.SetFloat("speed", 0);
 		
 	}
 
