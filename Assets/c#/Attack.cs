@@ -4,28 +4,35 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour {
 
+	public GameObject player;
+	Animator playerAnimator;
 	SpriteRenderer sr;
 
 	// Use this for initialization
 	void Start () {
 		sr = gameObject.GetComponent<SpriteRenderer>();
 		sr.enabled = false;
+		playerAnimator = player.GetComponent<Animator>();
 	}
 
-	IEnumerator test()
+	IEnumerator PlayAttackCoroutine()
 	{
+		playerAnimator.SetTrigger("attack");
 		sr.enabled = true;
 		yield return new WaitForSeconds(0.5f);
 		sr.enabled = false;
-
-		
 	}
 	
+	public void PlayAttack()
+	{
+		StartCoroutine(PlayAttackCoroutine());
+	}
+
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetMouseButtonDown(0))
-		{
-			StartCoroutine("test");
-		}
+		// if(Input.GetMouseButtonDown(0))
+		// {
+		// 	StartCoroutine("test");
+		// }
 	}
 }
