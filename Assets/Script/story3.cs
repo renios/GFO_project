@@ -17,7 +17,7 @@ public class story3 : MonoBehaviour {
 	void Update () {
 		if (num == 9)
 		{
-			textObject.text = "우린 너희를 살리려 했을 뿐이다. ";
+			textObject.text = "우린 너희를 살리려 했을 뿐이다. 어차피 우리 종족은 인간의 공격으로는 단번에 죽지 않아. ";
 		}
 		else 
 		{
