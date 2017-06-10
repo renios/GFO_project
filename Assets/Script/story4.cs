@@ -17,7 +17,7 @@ public class story4 : MonoBehaviour {
 	void Update () {
 		if (num == 10)
 		{
-			textObject.text = "........";
+			textObject.text = "봐라. 안죽는다고 하지 않았느냐.";
 		}
 		else 
 		{
