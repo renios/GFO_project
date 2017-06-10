@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class monsterHealth : MonoBehaviour {
 
-	public readonly int maxHealth = 30;
+	public readonly int maxHealth = 9;
 	public int currentHealth;
 	public GameObject currentHpBar;
 
@@ -43,6 +43,10 @@ public class monsterHealth : MonoBehaviour {
 		}
 		if(Input.GetKeyDown(KeyCode.N)){
 			Heal(1);
+		}
+		if (currentHealth == 0)
+		{
+			Destroy(gameObject);
 		}
 	}
 }
