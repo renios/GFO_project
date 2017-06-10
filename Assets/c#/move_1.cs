@@ -17,10 +17,12 @@ public class move_1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKey (KeyCode.D) || rightButtonClicked) {
-			transform.Translate (Vector3.right * Speed * Time.deltaTime);
+			transform.position += Vector3.right * Speed * Time.deltaTime;
+			transform.localRotation = Quaternion.Euler(0, 0, 0);
 		}
 		if(Input.GetKey (KeyCode.A) || leftButtonClicked) {
-			transform.Translate (Vector3.left * Speed * Time.deltaTime);
+			transform.position += Vector3.left * Speed * Time.deltaTime;
+			transform.localRotation = Quaternion.Euler(0, 180, 0);
 		}
 
 		if (leftButtonClicked || rightButtonClicked)
