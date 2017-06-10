@@ -8,8 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/MergedScene/scene01.unity
     guid: ee7c8fb5ed01a4514a5d2f4ff96eb08c
-  - enabled: 1
-    path: Assets/Scene/MergedScene/scene02.unity
+  - enabled: 0
+    path: 
     guid: 10c1affa7c60f4a02a7e7d2df410923d
   - enabled: 1
     path: Assets/Scene/1.unity
@@ -29,3 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/UFO 2.unity
     guid: e22adef8385bf4441847079f14a179ca
+  - enabled: 1
+    path: Assets/Scene/MergedScene/scene02.unity
+    guid: 1a75f7bb07f18524aac8ee728aec55fe
+  - enabled: 1
+    path: Assets/Scene/MergedScene/scene03_1.unity
+    guid: 00000000000000000000000000000000
