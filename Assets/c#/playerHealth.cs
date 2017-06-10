@@ -44,5 +44,9 @@ public class playerHealth : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.H)){
 			Heal(1);
 		}
+		if (currentHealth == 0)
+		{
+			Destroy(gameObject);
+		}
 	}
 }
