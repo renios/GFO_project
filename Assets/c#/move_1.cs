@@ -7,6 +7,8 @@ public class move_1 : MonoBehaviour {
 	bool leftButtonClicked = false;
 	bool rightButtonClicked = false;
 
+	bool JumpButton = false;
+
 	Animator animator;
 
 	// Use this for initialization
@@ -24,13 +26,22 @@ public class move_1 : MonoBehaviour {
 			transform.position += Vector3.left * Speed * Time.deltaTime;
 			transform.localRotation = Quaternion.Euler(0, 180, 0);
 		}
+		if(Input.GetKey (KeyCode.Space) || JumpButton) {
+			transform.position += Vector3.up * Speed * Time.deltaTime;
+	
+		}
 
 		if (leftButtonClicked || rightButtonClicked)
 			animator.SetFloat("speed", 1.0f);
 		else
 			animator.SetFloat("speed", 0);
 		
+			
+				
+			
+		
 	}
+
 
 	public void MoveLeftButtonDown()
 	{
@@ -50,5 +61,13 @@ public class move_1 : MonoBehaviour {
 	public void MoveRightButtonUp()
 	{
 		rightButtonClicked = false;
+	}
+	public void JumpButtonUp()
+	{
+		JumpButton = false;
+	}
+	public void JumpButtonDown()
+	{
+		JumpButton = true;
 	}
 }
