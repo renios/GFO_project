@@ -26,8 +26,10 @@ public class move_1 : MonoBehaviour {
 			transform.position += Vector3.left * Speed * Time.deltaTime;
 			transform.localRotation = Quaternion.Euler(0, 180, 0);
 		}
-		if(Input.GetKey (KeyCode.Space) || JumpButton) {
-			transform.position += Vector3.up * Speed * Time.deltaTime;
+		if(JumpButton) {
+			GetComponent<Rigidbody2D>().AddForce(Vector2.up * 7, ForceMode2D.Impulse);
+			// transform.position += Vector3.up * Speed * 2 * Time.deltaTime;
+			JumpButton = false;
 	
 		}
 
