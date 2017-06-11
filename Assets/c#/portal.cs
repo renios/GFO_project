@@ -12,6 +12,7 @@ public class portal : MonoBehaviour {
 		if(other.gameObject.tag == "Player")
 		{
 			SceneManager.LoadScene(nextSceneName);
+            
 		}
 	}
 }
