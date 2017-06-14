@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - potion
+  - Monstar
   layers:
   - Default
   - TransparentFX
