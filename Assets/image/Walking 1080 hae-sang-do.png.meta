@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-guid: 013251af32dd9074eb814efe23fad494
-timeCreated: 1496937383
+guid: a6365f4890ee448ca977e7ffce9e8ff0
+timeCreated: 1497625671
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Attack_0
-    21300002: Attack_1
-    21300004: Attack_2
-    21300006: Attack_3
-    21300008: Attack_4
+    21300000: Walking 1080 hae-sang-do_0
+    21300002: Walking 1080 hae-sang-do_1
+    21300004: Walking 1080 hae-sang-do_2
+    21300006: Walking 1080 hae-sang-do_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -45,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -75,67 +74,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_0
+      name: Walking 1080 hae-sang-do_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Attack_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Attack_2
+      name: Walking 1080 hae-sang-do_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Attack_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Attack_4
+      name: Walking 1080 hae-sang-do_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walking 1080 hae-sang-do_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
