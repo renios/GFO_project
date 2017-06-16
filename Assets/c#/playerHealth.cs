@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerHealth : MonoBehaviour {
 
@@ -46,7 +47,13 @@ public class playerHealth : MonoBehaviour {
 		}
 		if (currentHealth == 0)
 		{
-			Destroy(gameObject);
+			Restart();
 		}
+	}
+
+	void Restart()
+	{
+		string sceneName = SceneManager.GetActiveScene().name;
+		SceneManager.LoadScene(sceneName);
 	}
 }

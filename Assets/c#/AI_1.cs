@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AI_1 : MonoBehaviour {
     public float movePower = 1f;
+    float originMovePower;
 
     // Animator animator;
     Vector3 movement;
@@ -17,6 +18,7 @@ public class AI_1 : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        originMovePower = movePower;
         originalScale = transform.localScale;
         StartCoroutine("ChangeMovement");
 	}
@@ -40,6 +42,7 @@ public class AI_1 : MonoBehaviour {
       
         if (isTracing)
         {
+            movePower = originMovePower * 2;
             transform.localScale = originalScale * 1f;
             Vector3 playerPos = traceTarget.transform.position;
 
@@ -50,6 +53,7 @@ public class AI_1 : MonoBehaviour {
         }
         else
         {
+            movePower = originMovePower;
             transform.localScale = originalScale * 0.8f;
             if (movementFlag == 1)
                 dist = "Left";
