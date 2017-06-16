@@ -21,7 +21,7 @@ public class story3 : MonoBehaviour {
 		}
 		else 
 		{
-			SceneManager.LoadScene("4");
+			gameObject.SetActive(false);
 		}
 	}
 

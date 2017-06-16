@@ -21,7 +21,7 @@ public class story4 : MonoBehaviour {
 		}
 		else 
 		{
-			textObject.gameObject.SetActive(false);
+			gameObject.SetActive(false);
 		}
 	}
 
