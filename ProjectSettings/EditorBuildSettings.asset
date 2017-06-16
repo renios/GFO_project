@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/MergedScene/scene01.unity
     guid: ee7c8fb5ed01a4514a5d2f4ff96eb08c
+  - enabled: 1
+    path: Assets/Scene/MergedScene/scene03.unity
+    guid: 39715cf1f28cc6a4a8f1f42ef13cdd75
   - enabled: 0
     path: 
     guid: 10c1affa7c60f4a02a7e7d2df410923d
@@ -34,4 +37,4 @@ EditorBuildSettings:
     guid: 1a75f7bb07f18524aac8ee728aec55fe
   - enabled: 1
     path: Assets/Scene/MergedScene/scene03_1.unity
-    guid: 00000000000000000000000000000000
+    guid: e6c2f364ddb6d81499a65f30490f687e

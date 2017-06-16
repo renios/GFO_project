@@ -7,6 +7,7 @@ public class playerHealth1 : MonoBehaviour {
 	public readonly int maxHealth = 9;
 	public int currentHealth;
 	public GameObject currentHpBar;
+    bool AttackButton;
 
 	// Use this for initialization
 	void Start () {
@@ -44,5 +45,9 @@ public class playerHealth1 : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.N)){
 			Heal(1);
 		}
+       
 	}
+ 
+
+
 }

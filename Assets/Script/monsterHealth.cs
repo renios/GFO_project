@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class monsterHealth : MonoBehaviour {
 
-	public readonly int maxHealth = 9;
+	public  int maxHealth = 9;
 	public int currentHealth;
 	public GameObject currentHpBar;
+    bool AttackButton = false;
 
 	// Use this for initialization
 	void Start () {
@@ -49,4 +50,18 @@ public class monsterHealth : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
-}
+    public void OnTriggerStay2D(Collider2D other)
+    {
+        if (AttackButton)
+        {
+            if (other.gameObject.tag == "Monstar")
+            {
+                maxHealth = maxHealth - 1;
+            }
+        }
+    }
+    public void AttackButtonDown()
+    {
+        AttackButton = true;
+    }
+    }
