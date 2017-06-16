@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 114285745522530606}
   - component: {fileID: 58673840731236878}
   - component: {fileID: 114874679033738254}
+  - component: {fileID: 114216179300446192}
   m_Layer: 0
   m_Name: slime
   m_TagString: Untagged
@@ -160,7 +161,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1907344446617972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.84, y: -0.86, z: 0}
+  m_LocalPosition: {x: -39.91, y: -0.78, z: 0}
   m_LocalScale: {x: 0.2, y: 0.15, z: 1}
   m_Children:
   - {fileID: 4797183420627332}
@@ -303,6 +304,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114216179300446192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907344446617972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f21f90c3e4bc410393efa68137dd270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expObject: {fileID: 1004123069357162, guid: a5be419ac05b84bc7861116cb8585825, type: 2}
+  potionObject: {fileID: 1043935578326614, guid: d8039e04f99d80248ad3e29d4e318614,
+    type: 2}
+  dropProbability: 5
 --- !u!114 &114285745522530606
 MonoBehaviour:
   m_ObjectHideFlags: 1

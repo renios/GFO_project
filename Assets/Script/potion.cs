@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class potion : MonoBehaviour {
-public void OnTriggerEnter2D(Collider2D other)
-{
+
+	public int healAmount;
+
+	public void OnColliderEnter2D(Collision2D other)
+	{
 		if(other.gameObject.tag == "Player")
 		{
-			FindObjectOfType<health>().Heal(5);
+			other.gameObject.GetComponent<playerHealth>().Heal(healAmount);
 			Destroy(gameObject);
-		}
-		
-}
+		}	
+	}
 	
 
 	// Use this for initialization

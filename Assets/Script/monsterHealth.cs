@@ -47,6 +47,7 @@ public class monsterHealth : MonoBehaviour {
 		}
 		if (currentHealth == 0)
 		{
+			DropItem();
 			Destroy(gameObject);
 		}
 	}
@@ -60,4 +61,11 @@ public class monsterHealth : MonoBehaviour {
         //     }
         // }
     }
+
+	void DropItem()
+	{
+		ItemDrop drop = gameObject.GetComponent<ItemDrop>();
+		drop.DropExp(5);
+		drop.DropPotion();
+	}
 }
