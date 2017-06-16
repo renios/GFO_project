@@ -19,7 +19,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 0c09502f2c63b96448d2495f1442380c, type: 3}
+      value: {fileID: 21300000, guid: f0d7a668ca84440138f6b1fc74710f27, type: 3}
     - time: 0.083333336
       value: {fileID: 21300000, guid: 2f9660d6862cb764fbe6bbf3529d3064, type: 3}
     - time: 0.16666667
@@ -39,15 +39,14 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - serializedVersion: 2
-      path: 0
+    - path: 0
       attribute: 0
       script: {fileID: 0}
-      typeID: 212
+      classID: 212
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 0c09502f2c63b96448d2495f1442380c, type: 3}
+    - {fileID: 21300000, guid: f0d7a668ca84440138f6b1fc74710f27, type: 3}
     - {fileID: 21300000, guid: 2f9660d6862cb764fbe6bbf3529d3064, type: 3}
     - {fileID: 21300000, guid: 6422b22b8663f534fa65178953c92bf1, type: 3}
     - {fileID: 21300000, guid: 0b62f065d08c548479cff59e2f975601, type: 3}
@@ -77,4 +76,5 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
+  m_IsEmpty: 0
   m_Events: []

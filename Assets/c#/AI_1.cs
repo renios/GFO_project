@@ -12,6 +12,7 @@ public class AI_1 : MonoBehaviour {
     private bool isTracing;
     private GameObject traceTarget;
     Vector3 originalScale;
+    public GameObject spriteObject;
 
 
     // Use this for initialization
@@ -21,15 +22,10 @@ public class AI_1 : MonoBehaviour {
 	}
     IEnumerator ChangeMovement()
     {
-        movementFlag = Random.Range(0, 3);
-        Debug.Log("송신중");
-        // if (movementFlag == 0)
-        //     animator.SetBool("isMoving", false);
-        // else
-        //     animator.SetBool("isMoving", true);    
-        yield return new WaitForSeconds(2f);
-        Debug.Log("송신완료");
-        StartCoroutine("ChangeMovement");
+        while (true) {
+            movementFlag = Random.Range(0, 3);
+            yield return new WaitForSeconds(1f);
+        }
     }
 
     public void FixedUpdate()
@@ -44,6 +40,7 @@ public class AI_1 : MonoBehaviour {
       
         if (isTracing)
         {
+            transform.localScale = originalScale * 1f;
             Vector3 playerPos = traceTarget.transform.position;
 
             if (playerPos.x < transform.position.x)
@@ -53,6 +50,7 @@ public class AI_1 : MonoBehaviour {
         }
         else
         {
+            transform.localScale = originalScale * 0.8f;
             if (movementFlag == 1)
                 dist = "Left";
             else if (movementFlag == 2)
@@ -62,12 +60,12 @@ public class AI_1 : MonoBehaviour {
         if (dist == "Left")
         {
             moveVelocity = Vector3.left;
-            transform.localScale = originalScale * 1.0f;
+            spriteObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         else if (dist == "Right")
         {
             moveVelocity = Vector3.right;
-            transform.localScale = originalScale * 0.8f;
+            spriteObject.transform.localRotation = Quaternion.Euler(0, 180, 0);
 
         }
         transform.position += moveVelocity * movePower * Time.deltaTime;

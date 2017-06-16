@@ -10,21 +10,34 @@ public class move_1 : MonoBehaviour {
 	bool JumpButton = false;
 
 	Animator animator;
+	Attack attack;
+
+	public Collider2D groundChecker;
+	public GameObject spriteObject;
 
 	// Use this for initialization
 	void Start () {
-		animator = GetComponent<Animator>();
+		animator = spriteObject.GetComponent<Animator>();
+		attack = GetComponentInChildren<Attack>();
+	}
+
+	bool IsGround()
+	{
+		// groundChecker.
+		return false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKey (KeyCode.D) || rightButtonClicked) {
+		if(rightButtonClicked) {
 			transform.position += Vector3.right * Speed * Time.deltaTime;
-			transform.localRotation = Quaternion.Euler(0, 0, 0);
+			spriteObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
+			attack.direction = Vector2.right;
 		}
-		if(Input.GetKey (KeyCode.A) || leftButtonClicked) {
+		if(leftButtonClicked) {
 			transform.position += Vector3.left * Speed * Time.deltaTime;
-			transform.localRotation = Quaternion.Euler(0, 180, 0);
+			spriteObject.transform.localRotation = Quaternion.Euler(0, 180, 0);
+			attack.direction = Vector2.left;
 		}
 		if(JumpButton) {
 			GetComponent<Rigidbody2D>().AddForce(Vector2.up * 7, ForceMode2D.Impulse);
@@ -38,12 +51,19 @@ public class move_1 : MonoBehaviour {
 		else
 			animator.SetFloat("speed", 0);
 		
-			
-				
-			
-		
-	}
+		if (Input.GetKeyDown(KeyCode.D))
+			MoveRightButtonDown();
+		if (Input.GetKeyUp(KeyCode.D))
+			MoveRightButtonUp();
+		if (Input.GetKeyDown(KeyCode.A))
+			MoveLeftButtonDown();
+		if (Input.GetKeyUp(KeyCode.A))
+			MoveLeftButtonUp();
 
+		if (Input.GetKeyDown(KeyCode.W))
+			JumpButtonDown();
+			
+	}
 
 	public void MoveLeftButtonDown()
 	{

@@ -50,18 +50,14 @@ public class monsterHealth : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
-    public void OnTriggerStay2D(Collider2D other)
+    public void OnTriggerStay2D (Collider2D other)
     {
-        if (AttackButton)
-        {
-            if (other.gameObject.tag == "Monstar")
-            {
-                maxHealth = maxHealth - 1;
-            }
-        }
+        // if (AttackButton)
+        // {
+        //     if (other.gameObject.tag == "Monstar")
+        //     {
+        //         maxHealth = maxHealth - 1;
+        //     }
+        // }
     }
-    public void AttackButtonDown()
-    {
-        AttackButton = true;
-    }
-    }
+}
