@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class monsterHealth : MonoBehaviour {
 
@@ -12,7 +13,8 @@ public class monsterHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		currentHealth = maxHealth;	
-		UpdateHealthBar();
+		if (currentHpBar != null)
+			UpdateHealthBar();
 	}
 	
 	// Update is called once per frame
@@ -32,9 +34,15 @@ public class monsterHealth : MonoBehaviour {
 	public void Damaged(int damageAmount)
 	{
 		currentHealth -= damageAmount;
+		if ((gameObject.name == "Boss") && (currentHealth < 5))
+		{
+			currentHealth = 5;
+			SceneManager.LoadScene("Scene_boss2");
+		}
 		if (currentHealth < 0) 
 			currentHealth = 0;
-		UpdateHealthBar();
+		if (currentHpBar != null)
+			UpdateHealthBar();
 	}
 
 	void Update ()
@@ -47,7 +55,8 @@ public class monsterHealth : MonoBehaviour {
 		}
 		if (currentHealth == 0)
 		{
-			DropItem();
+			if (gameObject.GetComponent<ItemDrop>() != null)
+				DropItem();
 			Destroy(gameObject);
 		}
 	}

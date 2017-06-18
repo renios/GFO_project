@@ -22,6 +22,7 @@ public class story3 : MonoBehaviour {
 		else 
 		{
 			gameObject.SetActive(false);
+			FindObjectOfType<BossAttack>().AttackStart();
 		}
 	}
 

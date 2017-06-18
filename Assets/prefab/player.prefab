@@ -103,7 +103,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4350543077903168}
-  - component: {fileID: 68971300391113206}
+  - component: {fileID: 61313944673120606}
+  - component: {fileID: 114685650113039342}
   m_Layer: 0
   m_Name: GroundChecker
   m_TagString: Untagged
@@ -162,7 +163,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1568158602904158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.1, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4625109171483406}
@@ -203,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1409304622471844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.83, y: -1.93, z: 0}
+  m_LocalPosition: {x: -59.1, y: -1.93, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4928297415083454}
@@ -286,9 +287,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: -0.11, y: 0.31}
   serializedVersion: 2
-  m_Size: {x: 0.27, y: 0.56}
---- !u!68 &68971300391113206
-EdgeCollider2D:
+  m_Size: {x: 0.27, y: 0.62}
+--- !u!61 &61313944673120606
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -296,12 +297,11 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  m_Points:
-  - {x: -0.19, y: 0}
-  - {x: -0.07, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1}
 --- !u!95 &95958738332936456
 Animator:
   serializedVersion: 3
@@ -346,6 +346,18 @@ MonoBehaviour:
   Speed: 5
   groundChecker: {fileID: 0}
   spriteObject: {fileID: 1076744537100162}
+--- !u!114 &114685650113039342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568158602904158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c26e50b4d0edf4772b6c78a77293f952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveComponent: {fileID: 0}
 --- !u!114 &114755934357724020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -362,6 +374,7 @@ MonoBehaviour:
     type: 2}
   shotPosition: {fileID: 4107041831392234}
   direction: {x: 0, y: 0}
+  attackDelay: 0.2
 --- !u!212 &212126637361035144
 SpriteRenderer:
   m_ObjectHideFlags: 1

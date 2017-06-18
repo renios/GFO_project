@@ -21,9 +21,12 @@ public class ItemDrop : MonoBehaviour {
 
 	public void DropExp(int point)
 	{
-		float delta = Random.Range(-0.5f, 0.5f);
-		GameObject newExpObject = Instantiate(expObject, gameObject.transform.position + new Vector3(delta, 0, 0), Quaternion.identity) as GameObject;
-		// newExpObject.GetComponent<ExpObject>().SetExp(point);
+		if (expObject != null)
+		{
+			float delta = Random.Range(-0.5f, 0.5f);
+			GameObject newExpObject = Instantiate(expObject, gameObject.transform.position + new Vector3(delta, 0, 0), Quaternion.identity) as GameObject;
+			// newExpObject.GetComponent<ExpObject>().SetExp(point);
+		}
 	}
 
 	public void DropPotion()

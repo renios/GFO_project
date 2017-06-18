@@ -21,8 +21,27 @@ public class SwordPower : MonoBehaviour {
 		transform.position += new Vector3(direction.x, 0, 0) * actualSpeed;
 	}
 
-	void OnTriggerEnter2D (Collider2D other)
+	void OnTriggerStay2D (Collider2D other)
 	{
+		Debug.Log("Trigger " + other.name);
+		if (other.gameObject.tag == "Monster")
+		{
+			if (other.name.Contains("DarkOrb"))
+			{
+				other.GetComponent<monsterHealth>().Damaged(damage);
+				Destroy(gameObject);
+			}
+			else if (other.transform.parent.GetComponent<monsterHealth>() != null)
+			{
+				other.transform.parent.GetComponent<monsterHealth>().Damaged(damage);
+				Destroy(gameObject);
+			}
+		}		
+	}
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		Debug.Log("Collision" + other.gameObject.name);
 		if (other.gameObject.tag == "Monster")
 		{
 			if (other.transform.parent.GetComponent<monsterHealth>() != null)
@@ -30,9 +49,7 @@ public class SwordPower : MonoBehaviour {
 				other.transform.parent.GetComponent<monsterHealth>().Damaged(damage);
 				Destroy(gameObject);
 			}
-		}
-
-		
+		}	
 	}
 
 	public void SetDirection(Vector2 direction)

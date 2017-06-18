@@ -130,21 +130,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 4350543077903168, guid: e53def88c8c64d54da1f9ec0d3a9a4a2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350543077903168, guid: e53def88c8c64d54da1f9ec0d3a9a4a2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 61075887220039686, guid: e53def88c8c64d54da1f9ec0d3a9a4a2,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.62
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 68971300391113206, guid: e53def88c8c64d54da1f9ec0d3a9a4a2, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e53def88c8c64d54da1f9ec0d3a9a4a2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &78077874
@@ -1268,37 +1254,6 @@ Prefab:
     - {fileID: 114486184481840800, guid: d34246d3b6edb49e4a1dc125faa8fd0e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d34246d3b6edb49e4a1dc125faa8fd0e, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &953460609 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1568158602904158, guid: e53def88c8c64d54da1f9ec0d3a9a4a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 3121408}
---- !u!114 &953460610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 953460609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c26e50b4d0edf4772b6c78a77293f952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveComponent: {fileID: 0}
---- !u!61 &953460611
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 953460609}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1}
 --- !u!1 &977940753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,6 +1712,16 @@ Prefab:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 96167221}
+    - target: {fileID: 224707878174686238, guid: 237945a71b4de40a89ec08584bb018e7,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 224142854952060650, guid: 237945a71b4de40a89ec08584bb018e7,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 237945a71b4de40a89ec08584bb018e7, type: 2}
   m_IsPrefabParent: 0

@@ -6,29 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/New Folder/Scene_title.unity
+  - enabled: 1
     path: Assets/Scene/New Folder/Scene_opening.unity
-  - enabled: 1
-    path: Assets/Scene/MergedScene/scene03.unity
-  - enabled: 1
-    path: Assets/Scene/MergedScene/scene01.unity
-  - enabled: 0
-    path: 
-  - enabled: 1
-    path: Assets/Scene/1.unity
-  - enabled: 1
-    path: Assets/Scene/2.unity
-  - enabled: 1
-    path: Assets/Scene/3.unity
-  - enabled: 1
-    path: Assets/Scene/4.unity
-  - enabled: 1
-    path: Assets/Scene/UFO 1.unity
-  - enabled: 1
-    path: Assets/Scene/UFO 2.unity
-  - enabled: 1
-    path: Assets/Scene/MergedScene/scene02.unity
-  - enabled: 1
-    path: Assets/Scene/MergedScene/scene03_1.unity
   - enabled: 1
     path: Assets/Scene/New Folder/Scene_field1.unity
   - enabled: 1
@@ -36,4 +16,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/New Folder/Scene_boss.unity
   - enabled: 1
-    path: Assets/Scene/New Folder/Scene_boss_battle.unity
+    path: Assets/Scene/New Folder/Scene_boss2.unity
+  - enabled: 0
+    path: Assets/Scene/MergedScene/scene03.unity
+  - enabled: 0
+    path: Assets/Scene/MergedScene/scene01.unity
+  - enabled: 0
+    path: 
+  - enabled: 0
+    path: Assets/Scene/1.unity
+  - enabled: 0
+    path: Assets/Scene/2.unity
+  - enabled: 0
+    path: Assets/Scene/3.unity
+  - enabled: 0
+    path: Assets/Scene/4.unity
+  - enabled: 0
+    path: Assets/Scene/UFO 1.unity
+  - enabled: 0
+    path: Assets/Scene/UFO 2.unity
+  - enabled: 0
+    path: Assets/Scene/MergedScene/scene02.unity
+  - enabled: 0
+    path: Assets/Scene/MergedScene/scene03_1.unity

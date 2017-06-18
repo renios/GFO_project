@@ -16,8 +16,9 @@ public class ExpOrb : MonoBehaviour {
 		
 	}
 
-	public void OnColliderEnter2D(Collision2D other)
+	public void OnCollisionEnter2D(Collision2D other)
 	{
+		Debug.Log(other);
 		if(other.gameObject.tag == "Player")
 		{
 			// other.gameObject.GetComponent<playerHealth>().Heal(healAmount);

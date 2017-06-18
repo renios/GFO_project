@@ -265,6 +265,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &464044100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 464044101}
+  - component: {fileID: 464044103}
+  - component: {fileID: 464044102}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &464044101
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464044100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 896464156}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1280, y: 720}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &464044102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464044100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: fbe2c5e1326c34373a2fd87c0134590e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &464044103
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464044100}
 --- !u!4 &488869783 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4756493269283820, guid: b50c104123982e84683820049418b227,
@@ -408,6 +476,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1438952165}
   m_Script: {fileID: 11500000, guid: 702a47e7cf4ede444ad540956ea4e057, type: 3}
+--- !u!224 &896464156 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224264530196563088, guid: d34246d3b6edb49e4a1dc125faa8fd0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 928805547}
 --- !u!1 &901999740
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +774,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2005615401}
     - target: {fileID: 114832563401007204, guid: d34246d3b6edb49e4a1dc125faa8fd0e,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -887,6 +960,14 @@ Prefab:
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: JumpButtonDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795376490970918, guid: 237945a71b4de40a89ec08584bb018e7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598737929272648, guid: 237945a71b4de40a89ec08584bb018e7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 237945a71b4de40a89ec08584bb018e7, type: 2}
@@ -1126,8 +1207,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2005615399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d8c65e2484e5c944ad82b68ba0afd11, type: 3}
+  m_Script: {fileID: 11500000, guid: 2211f32840f391e42a333c568a9949b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textObject: {fileID: 588690630}
   num: 0
+  darkImage: {fileID: 464044102}

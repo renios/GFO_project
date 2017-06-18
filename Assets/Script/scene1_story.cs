@@ -41,7 +41,7 @@ public class scene1_story : MonoBehaviour {
 		}
 		else if (num == 6)
 		{
-			textObject.text = "돌아가신 너희 아빠가 남긴 검이다. 상처가 생긴다면 이 물약을 먹거라.";
+			textObject.text = "꼭 죽지말고 살아서 돌아오거라.";
 		}
 		else
 		{ 
