@@ -249,6 +249,24 @@ Prefab:
       propertyPath: m_Name
       value: slime (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4578770238357672, guid: 151eb7038030540c199c416cae928047, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4578770238357672, guid: 151eb7038030540c199c416cae928047, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58673840731236878, guid: 151eb7038030540c199c416cae928047,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645104495735840, guid: 151eb7038030540c199c416cae928047,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 151eb7038030540c199c416cae928047, type: 2}
   m_IsPrefabParent: 0
